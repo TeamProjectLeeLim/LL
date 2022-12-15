@@ -1,11 +1,11 @@
-package com.example.board;
+package com.example.memo;
 
 import java.util.List;
 
-public interface BoardService {
-    public int insertBoard(BoardVO vo);
-    public int deleteBoard(int seq);
-    public int updateBoard(BoardVO vo);
-    public BoardVO getBoard(int seq);
-    public List<BoardVO> getBoardList();
+public interface MemoService {
+    public int insertMemo(MemoVO vo);
+    public int deleteMemo(int seq);
+    public int updateMemo(MemoVO vo);
+    public MemoVO getMemo(int seq);
+    public List<MemoVO> getMemoList();
 }

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Board">
-    <insert id="insertBoard">
-        insert into BOARD ( title, writer, content)
+<mapper namespace="Memo">
+    <insert id="insertMemo">
+        insert into memo ( week, clas, title, keyword, content,understanding)
         values
-        ( #{title} , #{writer} , #{content})
+        ( #{week} , #{clas} , #{title}, #{keyword} , #{content} , #{understanding})
     </insert>
-    <update id="updateBoard">
-        update BOARD
-        set title=#{title}, content=#{content}, writer=#{writer}
+    <update id="updateMemo">
+        update memo
+        set week=#{week}, clas=#{clas}, title=#{title}, keyword=#{keyword}, content=#{content}, understanding=#{understanding}
         where seq=#{seq}
     </update>
-    <delete id="deleteBoard">
-        delete from BOARD where seq=#{seq}
+    <delete id="deleteMemo">
+        delete from memo where seq=#{seq}
     </delete>
-    <select id="getBoard" resultType="board">
-        select * from BOARD where seq=#{seq}
+    <select id="getMemo" resultType="memo">
+        select * from memo where seq=#{seq}
     </select>
-    <select id="getBoardCnt"  resultType="Integer">
-        select count(*) from BOARD
+    <select id="getMemoCnt"  resultType="Integer">
+        select count(*) from memo
     </select>
-    <select id="getBoardList" resultType="board">
-        select * from BOARD order by seq desc
+    <select id="getMemoList" resultType="memo">
+        select * from memo order by seq desc
     </select>
 </mapper>

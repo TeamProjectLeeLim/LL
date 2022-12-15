@@ -1,32 +1,32 @@
-package com.example.board;
+package com.example.memo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class BoardServiceImpl implements BoardService{
+public class MemoServiceImpl implements MemoService {
     @Autowired
-    BoardDAO boardDAO;
+    MemoDAO memoDAO;
     @Override
-    public int insertBoard(BoardVO vo){
-        return boardDAO.insertBoard(vo);
+    public int insertMemo(MemoVO vo){
+        return memoDAO.insertMemo(vo);
     }
     @Override
-    public int deleteBoard(int seq){
-        return boardDAO.deleteBoard(seq);
+    public int deleteMemo(int seq){
+        return memoDAO.deleteMemo(seq);
     }
     @Override
-    public int updateBoard(BoardVO vo){
-        return boardDAO.updateBoard(vo);
+    public int updateMemo(MemoVO vo){
+        return memoDAO.updateMemo(vo);
     }
     @Override
-    public BoardVO getBoard(int seq){
-        return boardDAO.getBoard(seq);
+    public MemoVO getMemo(int seq){
+        return memoDAO.getMemo(seq);
     }
     @Override
-    public List<BoardVO> getBoardList(){
-        return boardDAO.getBoardList();
+    public List<MemoVO> getMemoList(){
+        return memoDAO.getMemoList();
     }
 }
 

@@ -23,7 +23,7 @@ public class HomeController {
         model.addAttribute("classList",test);
         String msg ="Lee List ";
         model.addAttribute("title",msg);
-        return "board/list";
+        return "memo/list";
 
     }
 

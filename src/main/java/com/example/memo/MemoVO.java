@@ -1,15 +1,7 @@
-package com.example.board;
+package com.example.memo;
 
 import java.util.Date;
-public class BoardVO {
-
-    private int seq;
-    private String category;
-    private String title;
-    private String writer;
-    private String content;
-    private Date regdate;
-    private int cnt;
+public class MemoVO {
 
     public int getSeq() {
         return seq;
@@ -19,12 +11,20 @@ public class BoardVO {
         this.seq = seq;
     }
 
-    public String getCategory() {
-        return category;
+    public int getWeek() {
+        return week;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setWeek(int week) {
+        this.week = week;
+    }
+
+    public String getClas() {
+        return clas;
+    }
+
+    public void setClas(String clas) {
+        this.clas = clas;
     }
 
     public String getTitle() {
@@ -35,12 +35,12 @@ public class BoardVO {
         this.title = title;
     }
 
-    public String getWriter() {
-        return writer;
+    public String getKeyword() {
+        return keyword;
     }
 
-    public void setWriter(String writer) {
-        this.writer = writer;
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
     }
 
     public String getContent() {
@@ -59,11 +59,20 @@ public class BoardVO {
         this.regdate = regdate;
     }
 
-    public int getCnt() {
-        return cnt;
+    public int getUnderstanding() {
+        return understanding;
     }
 
-    public void setCnt(int cnt) {
-        this.cnt = cnt;
+    public void setUnderstanding(int understanding) {
+        this.understanding = understanding;
     }
+
+    private int seq;
+    private int week;
+    private String clas;
+    private String title;
+    private String keyword;
+    private String content;
+    private Date regdate;
+    private int understanding;
 }

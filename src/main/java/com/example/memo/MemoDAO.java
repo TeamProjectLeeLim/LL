@@ -1,45 +1,41 @@
-package com.example.board;
+package com.example.memo;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class BoardDAO{
+public class MemoDAO {
 
     @Autowired
     private SqlSession sqlSession;
 
 
-    public int insertBoard(BoardVO vo){
-        int result = sqlSession.insert("Board.insertBoard", vo);
+    public int insertMemo(MemoVO vo){
+        int result = sqlSession.insert("Memo.insertMemo", vo);
         return result;
     }
 
-    public int deleteBoard(int seq) {
-        int result = sqlSession.delete("Board.deleteBoard");
+    public int deleteMemo(int seq) {
+        int result = sqlSession.delete("Memo.deleteMemo",seq);
         return result;
     }
 
-    public int updateBoard(BoardVO vo) {
-        int result = sqlSession.update("Board.updateBoard",vo);
+    public int updateMemo(MemoVO vo) {
+        int result = sqlSession.update("Memo.updateMemo",vo);
         return result;
     }
 
 
-    public BoardVO getBoard(int seq) {
-        BoardVO one = sqlSession.selectOne("Board.getBoard",seq);
+    public MemoVO getMemo(int seq) {
+        MemoVO one = sqlSession.selectOne("Memo.getMemo",seq);
         return one;
     }
 
-    public List<BoardVO> getBoardList(){
-        List<BoardVO> list = sqlSession.selectList("Board.getBoardList");
+    public List<MemoVO> getMemoList(){
+        List<MemoVO> list = sqlSession.selectList("Memo.getMemoList");
         return list;
     }
 }
