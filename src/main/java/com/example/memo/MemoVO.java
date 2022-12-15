@@ -59,11 +59,11 @@ public class MemoVO {
         this.regdate = regdate;
     }
 
-    public int getUnderstanding() {
+    public String getUnderstanding() {
         return understanding;
     }
 
-    public void setUnderstanding(int understanding) {
+    public void setUnderstanding(String understanding) {
         this.understanding = understanding;
     }
 
@@ -74,5 +74,5 @@ public class MemoVO {
     private String keyword;
     private String content;
     private Date regdate;
-    private int understanding;
+    private String understanding;
 }

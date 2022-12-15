@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44499791-b419-48e3-866e-49db638c174b" name="Changes" comment="." />
+    <list default="true" id="44499791-b419-48e3-866e-49db638c174b" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/memo/MemoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/memo/MemoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/memo/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/memo/addpostform.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671101345009</updated>
       <workItem from="1671101346627" duration="4733000" />
-      <workItem from="1671106283733" duration="4785000" />
+      <workItem from="1671106283733" duration="6055000" />
     </task>
     <task id="LOCAL-00001" summary="pom.xml">
       <created>1671110767440</created>
@@ -191,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671111370704</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1671111537515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671111537515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

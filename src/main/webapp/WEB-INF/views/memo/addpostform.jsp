@@ -15,11 +15,11 @@
         <tr><td>Content</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
         <tr><td>Understanding</td><td>
         <div>
-            <input type="radio" id="1" name="check">
+            <input type="radio" id="1" name="understanding" value="1">
             <label for="1">1</label>
-            <input type="radio" id="2" name="check">
+            <input type="radio" id="2" name="understanding" value="2">
             <label for="2">2</label>
-            <input type="radio" id="3" name="check">
+            <input type="radio" id="3" name="understanding" value="3">
             <label for="3">3</label>
         </div>
         </td></tr>
