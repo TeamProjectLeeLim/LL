@@ -24,17 +24,22 @@
             background-color: #006bb3;
             color: white;
         }
+        .buto {
+            background-color:pink; color:black; font-size:15px;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif
+        }
+        h1{font-family: "Trebuchet MS", Arial, Helvetica, sans-serif}
     </style>
     <script>
         function delete_ok(id){
             var a = confirm("정말로 삭제하겠습니까?");
-            if(a) location.href='deletepost.jsp?id=' + id;
+            if(a) location.href='deleteok/' + id;
         }
     </script>
 </head>
 <body>
 
-<h1>수업 내용 정리</h1>
+<h1>수업 내용 정리 서비스</h1>
 
 <table id="list" width="90%">
     <tr>
@@ -60,13 +65,13 @@
             <td>${u.content}</td>
             <td>${u.regdate}</td>
             <td>${u.understanding}</td>
-            <td><a href="editform/${u.seq}">Edit</a></td>
-            <td><a href="delete_ok/${u.seq}">Delete</a></td>
-                <%--        <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>--%>
+            <td><a href="editform/${u.seq}" class="buto">Edit</a></td>
+            <td><a href="javascript:delete_ok('${u.seq}')" class="buto">Delete</a></td>
         </tr>
     </c:forEach>
 </table>
 
-<br/><a href="add">Add New Post</a>
+<br/><a href="add" class="buto">Add New Post</a>
+<a href="../login/logout" class="buto">logout</a>
 </body>
 </html>
